@@ -7,7 +7,7 @@ Via the Go Komoot library you can:
 [ work in progress ] login into your Komoot account  
 [ work in progress ] get Komoot user information
 
-### usage
+### Usage
 
 ```go
 komootConfig := goKomoot.Config{
@@ -18,6 +18,22 @@ komootConfig := goKomoot.Config{
 client := goKomoot.NewClient(komootConfig)
 
 userData := client.GetUserProfile()
+
 fmt.Println(userData.Name)
 ```
 
+### Developers Guide
+
+### Tests
+
+Running tests:
+
+```go
+go test -v./...
+```
+
+### todo:
+
+[ ] have fun!  
+[ ] add CI  
+[ ] add semantic release  
